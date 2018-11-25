@@ -1,0 +1,242 @@
+:root {
+  --primary-color: #06c;
+}
+
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans/OpenSans-Bold.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans/OpenSans-Italic.ttf');
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/open-sans/OpenSans-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/open-sans/OpenSans-Light.ttf');
+}
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/open-sans/OpenSans-Regular.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/open-sans/OpenSans-LightItalic.ttf');
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/open-sans/OpenSans-Italic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+html {
+  font-size: 20px;
+  line-height: 1.5;
+}
+body {
+  color: #50596c;
+  font-size: .8rem;
+  font-family: 'Open Sans Light',-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+button,
+a.button,
+input[type=submit] {
+  color: var(--primary-color);
+  background-color: #fff;
+  border-color: #4b48d6;
+  border-radius: .1rem;
+  border: .05rem solid var(--primary-color);
+  cursor: pointer;
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: bold;
+  height: 1.8rem;
+  line-height: 1.2rem;
+  outline: 0;
+  padding: .25rem .5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all .2s ease;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+}
+
+button.primary,
+a.button.primary,
+input[type=submit].primary {
+  color: #fff;
+  background: var(--primary-color);
+}
+
+button.danger,
+a.button.danger,
+input[type=submit].danger {
+  border-color: #d9534f;
+  color: #d9534f;
+}
+
+button.primary.danger,
+a.button.primary.danger,
+input[type=submit].primary.danger {
+  color: #fff;
+  background: #d9534f;
+}
+
+button.danger {
+  border-color: #d9534f;
+  color: #d9534f;
+}
+
+button.plain,
+a.button.plain,
+input[type=submit].plain {
+  border: none;
+}
+
+.row {
+  /* [item item item] */
+  display: flex;
+  margin: .8rem 0;
+  align-items: center;
+}
+.row.spaced {
+  justify-content: space-between;
+}
+
+.row:not(.collapsed) > *:not(:last-child) {
+  /* [item   item   item] */
+  margin-right: 1rem;
+}
+.row > .secondary {
+  /* [............item] */
+  width: auto;
+  text-align: right;
+}
+.row > .secondary * {
+  text-align: left;
+}
+
+/* Forms */
+
+form {
+  max-width: 40rem;
+}
+
+fieldset {
+  border: 0;
+  border-left: 5px solid #ddd;
+  padding-right: 0;
+}
+legend {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #888;
+  width: 100%;
+}
+
+input {
+  background-color: #fff;
+  border: .05rem solid #bbc;
+  border-radius: .1rem;
+  color: #50596c;
+  display: block;
+  font-size: .8rem;
+  height: 1.8rem;
+  line-height: 1.2rem;
+  max-width: 100%;
+  padding: .25rem .4rem;
+  position: relative;
+  transition: all .2s ease;
+  width: 100%;
+}
+
+input[type=checkbox] {
+  width: auto;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23667189'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right .35rem center/.4rem .5rem;
+  padding-right: 1.2rem;
+  border: .05rem solid #caced7;
+  border-radius: .1rem;
+  color: inherit;
+  font-size: .8rem;
+  height: 1.8rem;
+  line-height: 1.2rem;
+  outline: 0;
+  padding: .25rem .4rem;
+  padding-right: 0.4rem;
+  vertical-align: middle;
+  min-width: 4rem;
+}
+
+input:focus,
+select:focus {
+  box-shadow: 0 0 .1rem var(--primary-color);
+}
+
+.inline {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1.2rem;
+}
+
+.toolbar {
+  position: sticky;
+  bottom: -1rem;
+  left: -1rem;
+  right: -1rem;
+  display: flex;
+  background-color: white;
+  padding: .5rem;
+  border-top: 1px solid #eee;
+}
+.toolbar .secondary {
+  margin-left: auto;
+}
+.toolbar button:not(:last-child),
+.toolbar [type=submit]:not(:last-child),
+.toolbar .button:not(:last-child) {
+  margin-right: 1rem;
+}
