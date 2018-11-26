@@ -1,0 +1,61 @@
+<!doctype html>
+<meta charset=utf8>
+<link rel=stylesheet href=./decor.css>
+
+<style>
+  body {
+    max-width: 40rem;
+    margin: 1rem auto;
+    padding: 2rem;
+
+  }
+</style>
+
+<h1>Decor CSS styleguide</h1>
+
+<h2>Text styles</h2>
+
+<p>Decor is a very basic tooling for bootstraping a webapp.</p>
+
+<blockquote>
+  Decor makes basic things. It's easy to override or get rid of.
+</blockquote>
+
+<h2>Forms and fields</h2>
+
+<form>
+  <fieldset>
+    <legend>User informations</legend>
+
+    <div class=row>
+      <select>
+        <option>Mrs</option><option>Mr</option>
+      </select>
+      <input placeholder="First name">
+      <input placeholder="Last name">
+    </div>
+
+    <div class=row>
+      <input placeholder="Phone number">
+      <input placeholder="Email">
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Demand</legend>
+
+    <input class=row placeholder="Subject">
+    <textarea class=row placeholder="What informations would you like to share?"></textarea>
+  </fieldset>
+
+  <section class=toolbar>
+    <div>
+      <input type=submit class=primary value="Send this">
+      <button>Cancel all</button>
+      <button class=plain>Not sure</button>
+    </div>
+    <div class=secondary>
+      <button class=danger>Destroy all</button>
+    </div>
+  </section>
+</form>

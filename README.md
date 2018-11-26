@@ -25,6 +25,6 @@ _Decor_ is basic CSS template that is easy to customize and override.
 ![Combined form fields](https://user-images.githubusercontent.com/145172/48986435-37f1c980-f115-11e8-980f-ab2d6b2d83b4.png)
 
 
-### Beautiful formset and legend
+### Beautiful fieldset and legend
 
-![Beautiful formset and legend](https://user-images.githubusercontent.com/145172/48986436-37f1c980-f115-11e8-90d6-214bc06a1f33.png)
+![Beautiful fieldset and legend](https://user-images.githubusercontent.com/145172/48986436-37f1c980-f115-11e8-90d6-214bc06a1f33.png)
