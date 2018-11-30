@@ -1,0 +1,54 @@
+button,
+a.button,
+input[type=submit] {
+  color: var(--primary-color);
+  background-color: #fff;
+  border-color: #4b48d6;
+  border-radius: .1rem;
+  border: .05rem solid var(--primary-color);
+  cursor: pointer;
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+  outline: 0;
+  padding: .4rem .8rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all .2s ease;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+}
+
+button.primary,
+a.button.primary,
+input[type=submit].primary {
+  color: #fff;
+  background: var(--primary-color);
+}
+
+button.danger,
+a.button.danger,
+input[type=submit].danger {
+  border-color: #d9534f;
+  color: #d9534f;
+}
+
+button.primary.danger,
+a.button.primary.danger,
+input[type=submit].primary.danger {
+  color: #fff;
+  background: #d9534f;
+}
+
+button.danger {
+  border-color: #d9534f;
+  color: #d9534f;
+}
+
+button.plain,
+a.button.plain,
+input[type=submit].plain {
+  border: none;
+}

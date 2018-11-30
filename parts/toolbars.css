@@ -1,0 +1,18 @@
+.toolbar {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background-color: white;
+  padding: .4rem .8rem;
+  border-top: 1px solid #ddd;
+}
+.toolbar .secondary {
+  margin-left: auto;
+}
+.toolbar button:not(:last-child),
+.toolbar [type=submit]:not(:last-child),
+.toolbar .button:not(:last-child) {
+  margin-right: 1rem;
+}

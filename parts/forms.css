@@ -1,0 +1,63 @@
+form {
+  max-width: 40rem;
+}
+
+fieldset {
+  border: 0;
+  border-left: 5px solid #ddd;
+}
+legend {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #888;
+  width: 100%;
+}
+
+input,
+textarea {
+  background-color: #fff;
+  border: .05rem solid #bbc;
+  border-radius: .1rem;
+  color: #50596c;
+  display: block;
+  font-size: .8rem;
+  line-height: 1.2rem;
+  max-width: 100%;
+  padding: .4rem .8rem;
+  position: relative;
+  transition: all .2s ease;
+  width: 100%;
+}
+
+input[type=checkbox] {
+  width: auto;
+}
+
+textarea {
+  min-height: 5rem;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23667189'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right .35rem center/.4rem .5rem;
+  padding-right: 1.2rem;
+  border: .05rem solid #caced7;
+  border-radius: .1rem;
+  color: inherit;
+  font-size: .8rem;
+  line-height: 1.2rem;
+  outline: 0;
+  padding: .4rem .8rem;
+  vertical-align: middle;
+  min-width: 4rem;
+}
+
+input:focus,
+select:focus {
+  box-shadow: 0 0 .1rem var(--primary-color);
+}
