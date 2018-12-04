@@ -16,8 +16,8 @@ html {
 }
 body {
   color: #50596c;
-  font-size: 1rem;
-  font-family: "Open Sans", OpenSans, Arial;
+  font-size: .8rem;
+  font-family: "Open Sans", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   text-rendering: optimizeLegibility;
 }
 
