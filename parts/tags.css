@@ -37,8 +37,13 @@ blockquote {
 }
 
 code {
-  padding: .5rem 1rem;
+  padding: .2rem;
   background-color: black;
   color: white;
   font-family: monospace;
+}
+
+pre code {
+  display: block;
+  padding: .5rem 1rem;
 }
