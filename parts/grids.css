@@ -1,0 +1,28 @@
+.row {
+  /* [item item item] */
+  display: flex;
+  margin: .8rem 0;
+  align-items: center;
+}
+.row.spaced {
+  justify-content: space-between;
+}
+
+.row:not(.collapsed) > *:not(:last-child) {
+  /* [item   item   item] */
+  margin-right: 1rem;
+}
+.row > .secondary {
+  /* [............item] */
+  width: auto;
+  text-align: right;
+}
+.row > .secondary * {
+  text-align: left;
+}
+
+.inline {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1.2rem;
+}
