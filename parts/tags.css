@@ -38,7 +38,7 @@ blockquote {
 
 code {
   padding: .2rem;
-  background-color: black;
+  background-color: #555;
   color: white;
   font-family: monospace;
 }
