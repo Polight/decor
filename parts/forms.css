@@ -6,6 +6,9 @@ fieldset {
   border: 0;
   border-left: 5px solid #ddd;
 }
+fieldset:not(:first-child) {
+  margin-top: 1.5rem;
+}
 legend {
   font-size: 1rem;
   font-weight: bold;
@@ -14,6 +17,14 @@ legend {
   margin-bottom: 1rem;
   border-bottom: 1px solid #888;
   width: 100%;
+}
+
+label {
+  display: inline-block;
+  padding-top: 1rem;
+}
+.row label {
+  padding-top: inherit;
 }
 
 input,
