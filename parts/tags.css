@@ -6,17 +6,9 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-h1,
-h2,
-h3 {
-  margin: 1rem 0 .5rem 0;
-  padding: 1rem 0 .5rem 0;
-}
-h1:first-child,
-h2:first-child,
-h3:first-child {
-  margin-top: 0;
-  padding-top: 0;
+h1, h2, h3, h4 {
+  margin: 0 0 .5rem 0;
+  padding: 0 0 .5rem 0;
 }
 h1 { font-size: 1.6rem; }
 h2 { font-size: 1.4rem; }
@@ -45,4 +37,10 @@ code {
 pre code {
   display: block;
   padding: .5rem 1rem;
+}
+
+hr {
+  border-top: 1px solid #ccc;
+  border-bottom: 0;
+  margin: 1rem 0;
 }

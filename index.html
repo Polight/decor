@@ -10,23 +10,35 @@
   }
 </style>
 
-<h1>h1. Decor CSS styleguide</h1>
+<h1><code class="tagname">h1</code> Decor CSS styleguide</h1>
 
-<h2>h2. Text styles</h2>
+<h2><code class="tagname">h2</code> Text styles</h2>
 
-<p>p. Decor is a very basic tooling for bootstraping a webapp.<br>
+<p><code class="tagname">p</code> Decor is a very basic tooling for bootstraping a webapp.<br>
 It's a <em>class-less</em> CSS library.<br>
 Some classes are available to enhance behaviors, and all styles are low-level,
 so you can customize without <strike>headache</strike> nor <strike><code>!important</code></strike></p>
+
+<p>This page is entirely styled by Decor…</p>
+
+<p>
+  Get <em>Decor</em> or Read the documentation on <a href="https://github.com/polight/decor">the Github repository</a>
+  <div class="row docsection">
+    <a class="button primary" href="https://github.com/Polight/decor#readme">Read the Doc</a>
+    <a class="button" href="https://github.com/polight/decor">Get the Sources</a>
+  </div>
+</p>
+
+<hr>
 
 <blockquote>
   blockquote. Decor makes basic things. It's easy to override or get rid of.
 </blockquote>
 
-<code>code. Inline code</code>
+<code><code class="tagname">legend</code> Inline code</code>
 
 <pre>
-  <code>pre>code. Block of code</code>
+  <code><code class="tagname">pre > code</code> Block of code</code>
 </pre>
 
 
@@ -34,7 +46,7 @@ so you can customize without <strike>headache</strike> nor <strike><code>!import
 
 <form>
   <fieldset>
-    <legend>legend. User Information</legend>
+    <legend><code class="tagname">legend</code> User Information</legend>
 
     <div class=row>
       <select>
@@ -51,7 +63,7 @@ so you can customize without <strike>headache</strike> nor <strike><code>!import
   </fieldset>
 
   <fieldset>
-    <legend>Demand</legend>
+    <legend><code class="tagname">legend</code> Demand</legend>
 
     <input class=row placeholder="Subject">
     <textarea class=row placeholder="What informations would you like to share?"></textarea>
@@ -60,11 +72,25 @@ so you can customize without <strike>headache</strike> nor <strike><code>!import
   <section class=toolbar>
     <div>
       <input type=submit class=primary value="Send this">
-      <button>Cancel all</button>
-      <button class=plain>Not sure</button>
+      <button>Primary</button>
+      <button class=plain>Plain</button>
     </div>
     <div class=secondary>
-      <button class=danger>Destroy all</button>
+      <button class=danger>Secondary Danger</button>
     </div>
   </section>
 </form>
+
+<style>
+  .tagname {
+    color: #999;
+    background-color: #ccc;
+    font-size: .8rem;
+    display: inline;
+    vertical-align: middle;
+  }
+
+  .docsection {
+    justify-content: center;
+  }
+</style>
