@@ -22,6 +22,7 @@ legend {
 label {
   display: inline-block;
   padding-top: 1rem;
+  line-height: 1;
 }
 .row label {
   padding-top: inherit;
