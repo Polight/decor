@@ -29,7 +29,8 @@ label {
 }
 
 input,
-textarea {
+textarea,
+select {
   background-color: #fff;
   border: .05rem solid #bbc;
   border-radius: .1rem;
