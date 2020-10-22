@@ -12,10 +12,9 @@ input[type=submit] {
   font-weight: bold;
   line-height: 1.2rem;
   outline: 0;
-  padding: .4rem .8rem;
+  padding: .3rem .8rem;
   text-align: center;
   text-decoration: none;
-  transition: all .2s ease;
   vertical-align: middle;
   white-space: nowrap;
   width: auto;

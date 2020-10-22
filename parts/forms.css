@@ -40,7 +40,6 @@ textarea {
   max-width: 100%;
   padding: .4rem .8rem;
   position: relative;
-  transition: all .2s ease;
   width: 100%;
 }
 
